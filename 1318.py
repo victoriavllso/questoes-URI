@@ -11,7 +11,7 @@ while True:
         bilhete[i] = int(bilhete[i])
     for i in range(0, n+1):#iterando sobre cada bilhete original
         contador = 0
-        for j in range(m): #verificar se o número de bilhete atual aparece na lista de bilhetes presentes no pacote. 
+        for j in range(m): #verificar se o número de bilhete atual aparece de novo na lista de bilhetes presentes no pacote. 
             if bilhete[j] == i: 
                 contador +=1
         if contador>1: 
