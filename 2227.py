@@ -7,7 +7,7 @@ while True:
     if a == v == 0:
         break
     cteste +=1
-    
+    #o i do range representa o numero do aeroporto
     for i in range(1, a+1): #inicio todos os voos com 0
         voos [i] = 0
         
