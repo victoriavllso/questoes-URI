@@ -18,7 +18,7 @@ while True:
             if b2 == int(CPF[-1]):
                 print("CPF valido")
             else:
-                print("CPF invalido")
+                print("CPF invalido") #esse else é necessário para fechar o if do b2
     
         else:
             print("CPF invalido")
