@@ -1,6 +1,6 @@
 while True:
     try:
-        CPF = input().strip()
+        CPF = input().strip() #REMOVE O BRANCO
         cpf = CPF.replace('.', '').replace('-', '') #substitui o ponto e traço por um espaço vazio
         soma1 = 0
         soma2 = 0
