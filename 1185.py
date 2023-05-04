@@ -8,11 +8,14 @@ for i in range(0, 12):
 for i in range(12): # loop para preencher a matriz
     for j in range(12):
         mat[i][j] = float(input()) 
-for i in range(0, 11): #começo na linha 0 e vou até 10
-    for j in range(0,11-i): #percorro sempre 10-i
-        soma += mat[i][j] #soma dos elementos abaixo da diagonal
-
+        
+u = 11    #coloco 11 pois preciso que o range das colunas vá de 0 a 10    
+for i in range(0, 12): 
+    for j in range(0,u): 
+        soma += mat[i][j] 
+    u-=1
 if operacao == 'S':
     print(soma)
 if operacao == 'M':
     print("%.1f"%(soma/qtd))
+    
