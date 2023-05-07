@@ -3,7 +3,7 @@ mat = []  #crio a matriz
 for i in range(12):
     linha = []
     for j in range(12):
-        linha.append(float(input()))
+        linha.append(float(input())) #uma entrada de dados por linha
     mat.append(linha)
 c1 = 11
 c2 = 7
