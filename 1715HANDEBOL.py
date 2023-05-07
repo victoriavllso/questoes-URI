@@ -10,8 +10,8 @@ for i in range(jogadores):
     mat.append(linha)
 
 gol = 0
-for i in range(jogadores):
-    if all(mat[i]):
+for i in range(jogadores): #para cada jogador(linha)
+    if all(mat[i]): #se todas as posições da linha i forem igual a 1, somo 1 no contador
         gol += 1
 
 print(gol)
