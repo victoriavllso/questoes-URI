@@ -3,7 +3,7 @@ while True:
     if n == 0:
         break
     for i in range(0,n):
-        for j in range(0,n):
+        for j in range(0,n): #fazer as condições dentro do range para checar em cada posição i,j
             
             if (i< n-i-1): #pego o simétrico a ele, na linha, e comparo qual tem a menor distancia
                 dlinha = i
