@@ -47,16 +47,16 @@ for c in range(1,n+1): #o 'c' será o meu "instancia c"
                 for x in range(1,10): #Marco inicialmente todos os valores de 1 até 9 como não presentes
                     jatem[x] = False
                 
-                for i in range(y*3,(y+1)*3): #Percorro apenas as casas que estão dentro do quadrado 3x3 iniciado na linha o e coluna p
-                    for j in range(z*3,(z+1)*3):
+                for i in range(y*3,(y+1)*3): #Pegando de 3 em 3 quadrados (nas linhas)
+                    for j in range(z*3,(z+1)*3): #Pegando de 3 em 3 quadrados (nas colunas)
                         if jatem[mat[i][j]]: #Se o valor atual já está presente, então é porque ele apareceu antes, assim já não é um sudoku válido
                             valido = False
                             break
                         else: #Caso contrário, digo que o valor atual está presente
                             jatem[mat[i][j]] = True  
-                    if not valido:
+                    if not valido: #break para o quadrado 3x3
                         break
-                if not valido:
+                if not valido: #break para a linha
                     break
             if not valido:
                 break        
