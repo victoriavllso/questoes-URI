@@ -12,7 +12,7 @@ for c in range(1, n+1):
             linhamat.append(int(valores[j]))
         mat.append(linhamat)
     
-    for i in range(linha):
+    for i in range(linha): #substituo os valores da matriz, pelos novos valores (equivalente ao valor da força)
         for j in range(coluna):
             distanciaIJXY = max(abs(i-x),abs(j-y)) #Calculo a maior distância em relação ao ponto onde foi dado o soco do Hulk
             if distanciaIJXY > 8: #Se a distância for maior que 8, apenas aumento o valor da casa em 1
