@@ -14,7 +14,7 @@ for i in range(linha):
         maiorlinha = somalinha
         
 for j in range(coluna):
-    somacoluna = sum(mat[i][j] for i in range(linha))
+    somacoluna = sum(mat[i][j] for i in range(linha)) #como a coluna inclui diversos vetores, temos que percorrer todos eles para somar
     if somacoluna>maiorcoluna:
         maiorcoluna = somacoluna
 if maiorlinha > maiorcoluna:
